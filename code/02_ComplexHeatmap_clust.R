@@ -33,7 +33,7 @@ fviz_nbclust( corr_df , hcut, method = "wss")
 dev.off()
 
 #Heatmap color scales and annotations
-col_fun = colorRamp2(c(0, 0.5, 1), c("blue", "white", "red"))
+col_fun = colorRamp2(c(0.5, 0.75, 1), c("blue", "white", "red"))
 hm_anno = HeatmapAnnotation( df = metadata[,c('tumor_stage_pathological','histologic_type','age_cat')] )
 
 #Create the heatmap
